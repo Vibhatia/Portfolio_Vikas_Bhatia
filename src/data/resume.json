@@ -99,15 +99,23 @@
       "degree": "B.Tech in Computer Science & Engineering",
       "dates": "2020 - 2024",
       "gpa": "8.0/10 CGPA"
+    },
+    {
+      "institution": "J.P. Public Academy, Kasganj",
+      "degree": "Intermediate in Science",
+      "dates": "2018 - 2019",
+      "gpa": "88.4%"
     }
   ],
   "awards": [
+    "Received the Rising Star Award at Newgen Software for exceptional performance and key contributions during the LIC Release.",
     "Finalist in the 36-hour Smart India Hackathon 2023 (Kolkata) and qualified for the final round of Anveshna 2023.",
     "Student Coordinator at CSI (Computer Society of India); organized and led a React workshop on front-end development, mentoring over 100 junior participants.",
     "Secured Rank 109th/ 10K+ in CodeChef June Long Challenge and advanced to the 3rd round of CodeChef SnackDown."
   ],
   "extra": [
     "English (Full Professional)",
-    "Loves reading tech articles, exploring new frameworks, and diving into concepts to understand why they work."
+    "Loves reading tech articles, exploring new frameworks, and diving into concepts to understand why they work.",
+    "Loves to play Cricket and Football."
   ]
 }
