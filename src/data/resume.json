@@ -1,0 +1,113 @@
+{
+  "basics": {
+    "name": "Vikas Bhatia",
+    "title": "Software Design Engineer | Full Stack Developer",
+    "summary": "Hello! I'm Vikas Bhatia, a passionate Full Stack Developer driven by curiosity and a desire to understand technology from a deeper perspective. I enjoy exploring how systems function beneath the surface and continuously push myself to learn, adapt, and innovate. I’m currently working as a Software Design Engineer at Newgen Software, where I continue to refine my expertise in React, Node.js, Express.js, Java, and SQL. My goal is to keep evolving as a developer — combining technical depth with creativity to build solutions that make a real impact.",
+    "location": "Noida, Uttar Pradesh, India",
+    "email": "vikasbhatia0104@outlook.com",
+    "phone": "+91 8864877301",
+    "links": [
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/vikas-bhatia-925259238" },
+      { "name": "Github", "url": "https://github.com" }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Newgen Software",
+      "role": "Software Design Engineer",
+      "dates": "July 2024 - Present",
+      "location": "Noida",
+      "bullets": [
+        "Optimized RuleBuilder by implementing multi-level conditional rule engine, enabling users to add complex conditions and actions, and enhancing rule execution efficiency by 30%.",
+        "Introduced application-specific rule management, allowing creation and modification of global and local rules.",
+        "Developed an Error Boundary in RuleBuilder, enabling automated frontend error capture and backend logging via API, improving system monitoring and accelerating debugging.",
+        "Led RuleBuilder migration from CRA to Vite (React 19), delivering 4× faster builds and 15% smaller bundles.",
+        "Optimized MSSQL queries and reduced redundant database operations to improve system response time.",
+        "Implemented structured logging and error-handling mechanisms, improving debugging and production monitoring."
+      ],
+      "stack": ["React.js", "Node.js/Express.js", "SpringBoot", "MSSQL"],
+      "metrics": ["30% efficiency boost", "4x faster builds", "15% smaller bundles"]
+    },
+    {
+      "company": "Proxy Advocate",
+      "role": "SDE Intern",
+      "dates": "April 2023 - May 2023",
+      "location": "Gurugram",
+      "bullets": [
+        "Designed and implemented user interface of an employment management application resulting in a 60% reduction in workflow complexities.",
+        "Performance optimization of website by 30% through the strategic implementation of Next.js with Typescript.",
+        "Solely responsible for creating a user-friendly employee management app, managing data efficiently."
+      ],
+      "stack": ["Next.js", "TypeScript", "MongoDB"],
+      "metrics": ["60% complexity reduction", "30% performance optimization"]
+    },
+    {
+      "company": "Computer Society of India",
+      "role": "Full-stack Developer",
+      "dates": "August 2021 - August 2022",
+      "location": "Ghaziabad",
+      "bullets": [
+        "Worked closely with a team to create secure online login systems and optimize the management of college competitions.",
+        "Took the initiative to organize diverse events aimed at enhancing student awareness in the field of software engineering."
+      ],
+      "metrics": ["Event Organization", "Security Optimization"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "LegalBridge",
+      "stack": ["Android", "Node.js", "MongoDB Atlas", "Twilio", "Cloudinary"],
+      "bullets": [
+        "An Android app to provide centralized legal services and marketplace for Legal Service Providers (LSPs).",
+        "Implemented registration/login APIs with complex schemas, OTP verification, JWT authentication, ensuring 99.9% uptime.",
+        "Designed and implemented scalable booking APIs for LSP platforms, allowing clients to schedule and track meetings."
+      ],
+      "links": [{ "name": "Source Code", "url": "#" }]
+    },
+    {
+      "title": "Bharat-Yojana",
+      "stack": ["Node.js", "Firebase", "ChatGPT3API", "Socket.io"],
+      "bullets": [
+        "Developed 'Bharat-Yojana' simplifying access to government schemes, increasing user engagement.",
+        "Incorporated a Chatbot with the ChatGPT3API into an Android app via WebView, boosting user interactions by 30%.",
+        "Introduced real-time notifications with Socket.io, increasing user engagement by 88%."
+      ],
+      "links": [{ "name": "Source Code", "url": "#" }]
+    },
+    {
+      "title": "SwiftBuy",
+      "stack": ["MERN Stack", "Next.js", "Braintree", "JWT"],
+      "bullets": [
+        "Designed responsive design with the MERN stack, leading to a 30% faster loadtime with Next.js.",
+        "Incorporated Admin functionality with payment gateway of Braintree.",
+        "Integrated secure user authentication using JWT for reliable user access."
+      ],
+      "links": [{ "name": "Source Code", "url": "#" }]
+    }
+  ],
+  "skills": {
+    "Languages": ["JavaScript", "TypeScript", "C/C++", "Java", "Kotlin"],
+    "Backend": ["Node.js", "Express.js", "Next.js", "SpringBoot"],
+    "Frontend": ["React", "Redux", "MUI", "TailwindCSS", "HTML", "CSS", "Bootstrap"],
+    "Clouds & Databases": ["AWS", "SQL", "PostgreSQL", "MongoDB", "MSSQL", "Geospatial Data"],
+    "Tools": ["Docker", "K8s", "Git", "Vite"],
+    "AI": ["Large Language Models (LLM)"]
+  },
+  "education": [
+    {
+      "institution": "Ajay Kumar Garg Engineering College, Ghaziabad",
+      "degree": "B.Tech in Computer Science & Engineering",
+      "dates": "2020 - 2024",
+      "gpa": "8.0/10 CGPA"
+    }
+  ],
+  "awards": [
+    "Finalist in the 36-hour Smart India Hackathon 2023 (Kolkata) and qualified for the final round of Anveshna 2023.",
+    "Student Coordinator at CSI (Computer Society of India); organized and led a React workshop on front-end development, mentoring over 100 junior participants.",
+    "Secured Rank 109th/ 10K+ in CodeChef June Long Challenge and advanced to the 3rd round of CodeChef SnackDown."
+  ],
+  "extra": [
+    "English (Full Professional)",
+    "Loves reading tech articles, exploring new frameworks, and diving into concepts to understand why they work."
+  ]
+}
