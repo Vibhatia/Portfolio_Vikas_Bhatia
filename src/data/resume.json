@@ -20,7 +20,7 @@
       "bullets": [
         "Optimized RuleBuilder by implementing multi-level conditional rule engine, enabling users to add complex conditions and actions, and enhancing rule execution efficiency by 30%.",
         "Introduced application-specific rule management, allowing creation and modification of global and local rules.",
-        "Developed an Error Boundary in RuleBuilder, enabling automated frontend error capture and backend logging via API, improving system monitoring and accelerating debugging.",
+        "Developed an Error Boundary in RuleBuilder, enabling automated frontend error capture and backend logging via RESTfulAPI, improving system monitoring and accelerating debugging.",
         "Led RuleBuilder migration from CRA to Vite (React 19), delivering 4× faster builds and 15% smaller bundles.",
         "Optimized MSSQL queries and reduced redundant database operations to improve system response time.",
         "Implemented structured logging and error-handling mechanisms, improving debugging and production monitoring."
@@ -86,7 +86,7 @@
     }
   ],
   "skills": {
-    "Languages": ["JavaScript", "TypeScript", "C/C++", "Java", "Kotlin"],
+    "Languages": ["JavaScript", "TypeScript", "C/C++", "Java"],
     "Backend": ["Node.js", "Express.js", "Next.js", "SpringBoot"],
     "Frontend": ["React", "Redux", "MUI", "TailwindCSS", "HTML", "CSS", "Bootstrap"],
     "Clouds & Databases": ["AWS", "SQL", "PostgreSQL", "MongoDB", "MSSQL", "Geospatial Data"],

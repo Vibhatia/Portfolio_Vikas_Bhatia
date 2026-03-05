@@ -40,6 +40,7 @@ const Projects: React.FC = () => {
                       href={link.url}
                       className="p-2 rounded-full bg-white/5 text-slate-400 hover:text-white hover:bg-white/10 transition-all"
                       title={link.name}
+                      target="_blank"
                     >
                       <ExternalLink className="w-5 h-5" />
                     </a>
