@@ -8,7 +8,7 @@
     "phone": "+91 8864877301",
     "links": [
       { "name": "LinkedIn", "url": "https://www.linkedin.com/in/vikas-bhatia-925259238" },
-      { "name": "Github", "url": "https://github.com" }
+      { "name": "Github", "url": "https://github.com/Vibhatia" }
     ]
   },
   "experience": [
@@ -62,7 +62,7 @@
         "Implemented registration/login APIs with complex schemas, OTP verification, JWT authentication, ensuring 99.9% uptime.",
         "Designed and implemented scalable booking APIs for LSP platforms, allowing clients to schedule and track meetings."
       ],
-      "links": [{ "name": "Source Code", "url": "#" }]
+      "links": [{ "name": "Source Code", "url": "https://github.com/kinsteve/LegalBridge-API" }]
     },
     {
       "title": "Bharat-Yojana",
@@ -72,7 +72,7 @@
         "Incorporated a Chatbot with the ChatGPT3API into an Android app via WebView, boosting user interactions by 30%.",
         "Introduced real-time notifications with Socket.io, increasing user engagement by 88%."
       ],
-      "links": [{ "name": "Source Code", "url": "#" }]
+      "links": [{ "name": "Source Code", "url": "https://github.com/kinsteve/Bharat-Yojana-Website-" }]
     },
     {
       "title": "SwiftBuy",
@@ -82,7 +82,7 @@
         "Incorporated Admin functionality with payment gateway of Braintree.",
         "Integrated secure user authentication using JWT for reliable user access."
       ],
-      "links": [{ "name": "Source Code", "url": "#" }]
+      "links": [{ "name": "Source Code", "url": "https://github.com/Vibhatia/SwiftBuy" }]
     }
   ],
   "skills": {

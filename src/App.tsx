@@ -9,7 +9,7 @@ import Achievements from './components/Achievements';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Education from './components/Education';
-import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Github, Send, Loader2 } from 'lucide-react';
 import resumeData from './data/resume.json';
 
 export default function App() {
@@ -20,6 +20,64 @@ export default function App() {
     damping: 30,
     restDelta: 0.001
   });
+
+  // Form state
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'success' | 'error' | null;
+    message: string;
+  }>({ type: null, message: '' });
+
+  // Handle input change
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: '' });
+
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitStatus({
+          type: 'success',
+          message: 'Message sent successfully! Check your email for confirmation.'
+        });
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setSubmitStatus({
+          type: 'error',
+          message: data.message || 'Failed to send message. Please try again.'
+        });
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: 'error',
+        message: 'Network error. Please check your connection and try again.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="relative min-h-screen bg-slate-950 text-slate-200 selection:bg-emerald-500/30 selection:text-emerald-400">
@@ -97,32 +155,73 @@ export default function App() {
                   </div>
 
                   <div className="p-8 rounded-3xl bg-white/[0.02] border border-white/5">
-                    <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+                    <form className="space-y-4" onSubmit={handleSubmit}>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <input
                           type="text"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleInputChange}
                           placeholder="Name"
+                          required
                           className="w-full px-5 py-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-slate-500 focus:outline-none focus:border-emerald-500/50 transition-all"
                         />
                         <input
                           type="email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleInputChange}
                           placeholder="Email"
+                          required
                           className="w-full px-5 py-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-slate-500 focus:outline-none focus:border-emerald-500/50 transition-all"
                         />
                       </div>
                       <input
                         type="text"
+                        name="subject"
+                        value={formData.subject}
+                        onChange={handleInputChange}
                         placeholder="Subject"
+                        required
                         className="w-full px-5 py-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-slate-500 focus:outline-none focus:border-emerald-500/50 transition-all"
                       />
                       <textarea
+                        name="message"
+                        value={formData.message}
+                        onChange={handleInputChange}
                         placeholder="Message"
                         rows={4}
+                        required
                         className="w-full px-5 py-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-slate-500 focus:outline-none focus:border-emerald-500/50 transition-all resize-none"
                       />
-                      <button className="w-full py-4 bg-emerald-500 text-slate-950 font-bold rounded-xl hover:scale-[1.02] active:scale-95 transition-all">
-                        Send Message
+                      <button 
+                        type="submit"
+                        disabled={isSubmitting}
+                        className="w-full py-4 bg-emerald-500 text-slate-950 font-bold rounded-xl hover:scale-[1.02] active:scale-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2"
+                      >
+                        {isSubmitting ? (
+                          <>
+                            <Loader2 className="w-5 h-5 animate-spin" />
+                            Sending...
+                          </>
+                        ) : (
+                          <>
+                            <Send className="w-5 h-5" />
+                            Send Message
+                          </>
+                        )}
                       </button>
+                      
+                      {/* Status Message */}
+                      {submitStatus.type && (
+                        <div className={`p-4 rounded-xl text-center ${
+                          submitStatus.type === 'success' 
+                            ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/30' 
+                            : 'bg-red-500/10 text-red-400 border border-red-500/30'
+                        }`}>
+                          {submitStatus.message}
+                        </div>
+                      )}
                     </form>
                   </div>
                 </div>
