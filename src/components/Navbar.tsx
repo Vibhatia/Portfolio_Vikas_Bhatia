@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,6 +16,7 @@ const Navbar: React.FC = () => {
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
     { name: 'Skills', href: '#skills' },
+    { name: 'Resume', href: 'https://drive.google.com/uc?export=download&id=1DjM5Ab2hOZcBv6_BRwJjJqKZ8LhnOVd-', external: true },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -31,13 +32,26 @@ const Navbar: React.FC = () => {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-sm font-medium text-slate-400 hover:text-emerald-400 transition-colors"
-            >
-              {link.name}
-            </a>
+            link.external ? (
+              <a
+                key={link.name}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-slate-400 hover:text-emerald-400 transition-colors flex items-center gap-1"
+              >
+                {link.name}
+                <Download className="w-3 h-3" />
+              </a>
+            ) : (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-sm font-medium text-slate-400 hover:text-emerald-400 transition-colors"
+              >
+                {link.name}
+              </a>
+            )
           ))}
           <button className="px-5 py-2 bg-emerald-500 text-slate-950 text-sm font-bold rounded-lg hover:scale-105 transition-transform">
             Hire Me
@@ -62,16 +76,30 @@ const Navbar: React.FC = () => {
             exit={{ opacity: 0, y: -20 }}
             className="absolute top-full left-0 w-full bg-slate-950 border-b border-white/5 p-6 md:hidden"
           >
-            <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-lg font-medium text-slate-400 hover:text-emerald-400 transition-colors"
-                >
-                  {link.name}
-                </a>
+                link.external ? (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-lg font-medium text-slate-400 hover:text-emerald-400 transition-colors flex items-center gap-2"
+                  >
+                    {link.name}
+                    <Download className="w-4 h-4" />
+                  </a>
+                ) : (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-lg font-medium text-slate-400 hover:text-emerald-400 transition-colors"
+                  >
+                    {link.name}
+                  </a>
+                )
               ))}
               <button className="w-full py-3 bg-emerald-500 text-slate-950 font-bold rounded-xl mt-4">
                 Hire Me

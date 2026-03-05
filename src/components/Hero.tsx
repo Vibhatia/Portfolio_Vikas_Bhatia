@@ -42,10 +42,15 @@ const Hero: React.FC = () => {
               View Experience
               <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="px-8 py-4 bg-white/5 text-white font-bold rounded-xl border border-white/10 hover:bg-white/10 transition-all flex items-center gap-2">
+            <a
+              href="https://drive.google.com/uc?export=download&id=1DjM5Ab2hOZcBv6_BRwJjJqKZ8LhnOVd-"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-white/5 text-white font-bold rounded-xl border border-white/10 hover:bg-white/10 transition-all flex items-center gap-2 cursor-pointer"
+            >
               <Download className="w-4 h-4" />
               Download Resume
-            </button>
+            </a>
           </div>
 
           <div className="flex gap-6">
