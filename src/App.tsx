@@ -60,7 +60,7 @@ export default function App() {
       if (data.success) {
         setSubmitStatus({
           type: 'success',
-          message: 'Message sent successfully! Check your email for confirmation.'
+          message: 'Your Message sent successfully! Check your email for confirmation in the Inbox or Spam folder.'
         });
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
