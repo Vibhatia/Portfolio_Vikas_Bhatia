@@ -37,8 +37,37 @@ const sendEmail = async ({ name, email, subject, message }) => {
     `,
   };
 
+  // Send confirmation email to the sender
+  const confirmationMailOptions = {
+    from: process.env.EMAIL_USER,
+    to: email,
+    subject: 'Thank you for reaching out!',
+    html: `
+      <div style="font-family: Arial, sans-serif; padding: 20px; max-width: 600px;">
+        <h2 style="color: #10b981;">Thank you for connecting!</h2>
+        <p>Hi ${name},</p>
+        <p>I've received your message and will get back to you as soon as possible.</p>
+        <p>Here's a copy of your message:</p>
+        <div style="background: #f3f4f6; padding: 20px; border-radius: 10px; margin-top: 15px;">
+          <p><strong>Subject:</strong> ${subject || 'Not specified'}</p>
+          <p><strong>Message:</strong></p>
+          <p style="white-space: pre-wrap;">${message}</p>
+        </div>
+        <p style="color: #6b7280; font-size: 12px; margin-top: 20px;">
+          Best regards,<br/>
+          Vikas Bhatia
+        </p>
+      </div>
+    `,
+  };
+
   try {
+    // Send email to portfolio owner
     await transporter.sendMail(mailOptions);
+    
+    // Send confirmation to sender
+    await transporter.sendMail(confirmationMailOptions);
+    
     return { success: true, message: 'Email sent successfully!' };
   } catch (error) {
     console.error('Email sending error:', error);
