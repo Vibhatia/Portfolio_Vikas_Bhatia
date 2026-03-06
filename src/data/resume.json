@@ -8,7 +8,8 @@
     "phone": "+91 8864877301",
     "links": [
       { "name": "LinkedIn", "url": "https://www.linkedin.com/in/vikas-bhatia-925259238" },
-      { "name": "Github", "url": "https://github.com/Vibhatia" }
+      { "name": "Github", "url": "https://github.com/Vibhatia" },
+      { "name": "LeetCode", "url": "https://leetcode.com/u/Vi_bhatia/"}
     ]
   },
   "experience": [
@@ -50,6 +51,7 @@
         "Worked closely with a team to create secure online login systems and optimize the management of college competitions.",
         "Took the initiative to organize diverse events aimed at enhancing student awareness in the field of software engineering."
       ],
+      "stack": ["React.js", "Node.js", "MongoDB","SpringBoot"],
       "metrics": ["Event Organization", "Security Optimization"]
     }
   ],
@@ -90,7 +92,7 @@
     "Backend": ["Node.js", "Express.js", "Next.js", "SpringBoot"],
     "Frontend": ["React", "Redux", "MUI", "TailwindCSS", "HTML", "CSS", "Bootstrap"],
     "Clouds & Databases": ["AWS", "SQL", "PostgreSQL", "MongoDB", "MSSQL", "Geospatial Data"],
-    "Tools": ["Docker", "K8s", "Git", "Vite"],
+    "Tools": ["Docker", "K8s", "Git", "Vite","Copilot","JIRA"],
     "AI": ["Large Language Models (LLM)"]
   },
   "education": [

@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Download, ChevronRight, Github, Linkedin, Mail } from 'lucide-react';
 import resumeData from '../data/resume.json';
+import LeetCodeIcon from './LeetCodeIcon';
 
 const Hero: React.FC = () => {
   const { basics } = resumeData;
@@ -63,7 +64,7 @@ const Hero: React.FC = () => {
                 className="text-slate-500 hover:text-emerald-400 transition-colors"
                 title={link.name}
               >
-                {link.name === 'LinkedIn' ? <Linkedin /> : <Github />}
+                {link.name === 'LinkedIn' ? <Linkedin /> : link.name === 'LeetCode' ? <LeetCodeIcon /> : <Github />}
               </a>
             ))}
             <a
