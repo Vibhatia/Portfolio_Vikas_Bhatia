@@ -7,9 +7,18 @@
     "email": "vikasbhatia0104@outlook.com",
     "phone": "+91 8864877301",
     "links": [
-      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/vikas-bhatia-925259238" },
-      { "name": "Github", "url": "https://github.com/Vibhatia" },
-      { "name": "LeetCode", "url": "https://leetcode.com/u/Vi_bhatia/"}
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/vikas-bhatia-925259238"
+      },
+      {
+        "name": "Github",
+        "url": "https://github.com/Vibhatia"
+      },
+      {
+        "name": "LeetCode",
+        "url": "https://leetcode.com/u/Vi_bhatia/"
+      }
     ]
   },
   "experience": [
@@ -19,15 +28,27 @@
       "dates": "July 2024 - Present",
       "location": "Noida",
       "bullets": [
-        "Optimized RuleBuilder by implementing multi-level conditional rule engine, enabling users to add complex conditions and actions, and enhancing rule execution efficiency by 30%.",
-        "Introduced application-specific rule management, allowing creation and modification of global and local rules.",
-        "Developed an Error Boundary in RuleBuilder, enabling automated frontend error capture and backend logging via RESTfulAPI, improving system monitoring and accelerating debugging.",
-        "Led RuleBuilder migration from CRA to Vite (React 19), delivering 4× faster builds and 15% smaller bundles.",
-        "Optimized MSSQL queries and reduced redundant database operations to improve system response time.",
-        "Implemented structured logging and error-handling mechanisms, improving debugging and production monitoring."
+        "Architected a multi-level conditional rule engine end-to-end, integrating React UI workflows with Spring Boot backend APIs and enhancing rule execution efficiency by 30%.",
+        "Built and deployed Java-based AWS Lambda functions integrated with DynamoDB and S3 for backend rule processing and asset storage, reducing manual processing overhead.",
+        "Designed and implemented microservice-based APIs for global and local rule provisioning using Spring Boot, Spring Data JPA, and MSSQL, containerized with Docker for consistent deployment.",
+        "Developed an Error Boundary in RuleBuilder, enabling automated frontend error capture and backend logging via Node.js/Express, improving system monitoring and accelerating debugging.",
+        "Increased unit and integration test coverage across critical rule-engine modules using Jest, reducing regression defects during production releases.",
+        "Led RuleBuilder migration from CRA to Vite (React 19), delivering 4× faster builds, 15% smaller bundles, and an updated CI/CD pipeline."
       ],
-      "stack": ["React.js", "Node.js/Express.js", "SpringBoot", "MSSQL"],
-      "metrics": ["30% efficiency boost", "4x faster builds", "15% smaller bundles"]
+      "stack": [
+        "React.js",
+        "Node.js/Express.js",
+        "SpringBoot",
+        "MSSQL",
+        "Kafka",
+        "AWS (Lambda, DynamoDB, S3)",
+        "Docker"
+      ],
+      "metrics": [
+        "30% efficiency boost",
+        "4x faster builds",
+        "15% smaller bundles"
+      ]
     },
     {
       "company": "Proxy Advocate",
@@ -39,8 +60,15 @@
         "Performance optimization of website by 30% through the strategic implementation of Next.js with Typescript.",
         "Solely responsible for creating a user-friendly employee management app, managing data efficiently."
       ],
-      "stack": ["Next.js", "TypeScript", "MongoDB"],
-      "metrics": ["60% complexity reduction", "30% performance optimization"]
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "MongoDB"
+      ],
+      "metrics": [
+        "60% complexity reduction",
+        "30% performance optimization"
+      ]
     },
     {
       "company": "Computer Society of India",
@@ -51,49 +79,124 @@
         "Worked closely with a team to create secure online login systems and optimize the management of college competitions.",
         "Took the initiative to organize diverse events aimed at enhancing student awareness in the field of software engineering."
       ],
-      "stack": ["React.js", "Node.js", "MongoDB","SpringBoot"],
-      "metrics": ["Event Organization", "Security Optimization"]
+      "stack": [
+        "React.js",
+        "Node.js",
+        "MongoDB",
+        "SpringBoot"
+      ],
+      "metrics": [
+        "Event Organization",
+        "Security Optimization"
+      ]
     }
   ],
   "projects": [
     {
       "title": "LegalBridge",
-      "stack": ["Android", "Node.js", "MongoDB Atlas", "Twilio", "Cloudinary"],
+      "stack": [
+        "Android",
+        "Node.js",
+        "MongoDB Atlas",
+        "Twilio",
+        "Cloudinary"
+      ],
       "bullets": [
         "An Android app to provide centralized legal services and marketplace for Legal Service Providers (LSPs).",
         "Implemented registration/login APIs with complex schemas, OTP verification, JWT authentication, ensuring 99.9% uptime.",
         "Designed and implemented scalable booking APIs for LSP platforms, allowing clients to schedule and track meetings."
       ],
-      "links": [{ "name": "Source Code", "url": "https://github.com/kinsteve/LegalBridge-API" }]
+      "links": [
+        {
+          "name": "Source Code",
+          "url": "https://github.com/kinsteve/LegalBridge-API"
+        }
+      ]
     },
     {
       "title": "Bharat-Yojana",
-      "stack": ["Node.js", "Firebase", "ChatGPT3API", "Socket.io"],
+      "stack": [
+        "Node.js",
+        "Firebase",
+        "ChatGPT3API",
+        "Socket.io"
+      ],
       "bullets": [
         "Developed 'Bharat-Yojana' simplifying access to government schemes, increasing user engagement.",
         "Incorporated a Chatbot with the ChatGPT3API into an Android app via WebView, boosting user interactions by 30%.",
         "Introduced real-time notifications with Socket.io, increasing user engagement by 88%."
       ],
-      "links": [{ "name": "Source Code", "url": "https://github.com/kinsteve/Bharat-Yojana-Website-" }]
+      "links": [
+        {
+          "name": "Source Code",
+          "url": "https://github.com/kinsteve/Bharat-Yojana-Website-"
+        }
+      ]
     },
     {
       "title": "SwiftBuy",
-      "stack": ["MERN Stack", "Next.js", "Braintree", "JWT"],
+      "stack": [
+        "MERN Stack",
+        "Next.js",
+        "Braintree",
+        "JWT"
+      ],
       "bullets": [
         "Designed responsive design with the MERN stack, leading to a 30% faster loadtime with Next.js.",
         "Incorporated Admin functionality with payment gateway of Braintree.",
         "Integrated secure user authentication using JWT for reliable user access."
       ],
-      "links": [{ "name": "Source Code", "url": "https://github.com/Vibhatia/SwiftBuy" }]
+      "links": [
+        {
+          "name": "Source Code",
+          "url": "https://github.com/Vibhatia/SwiftBuy"
+        }
+      ]
     }
   ],
   "skills": {
-    "Languages": ["JavaScript", "TypeScript", "C/C++", "Java"],
-    "Backend": ["Node.js", "Express.js", "Next.js", "SpringBoot"],
-    "Frontend": ["React", "Redux", "MUI", "TailwindCSS", "HTML", "CSS", "Bootstrap"],
-    "Clouds & Databases": ["AWS", "SQL", "PostgreSQL", "MongoDB", "MSSQL", "Geospatial Data"],
-    "Tools": ["Docker", "K8s", "Git", "Vite","Copilot","JIRA"],
-    "AI": ["Large Language Models (LLM)"]
+    "Languages": [
+      "JavaScript",
+      "TypeScript",
+      "C/C++",
+      "Java"
+    ],
+    "Backend": [
+      "Node.js",
+      "Express.js",
+      "Next.js",
+      "SpringBoot"
+    ],
+    "Frontend": [
+      "React",
+      "Redux",
+      "MUI",
+      "TailwindCSS",
+      "HTML",
+      "CSS",
+      "Bootstrap"
+    ],
+    "Clouds & Databases": [
+      "AWS",
+      "SQL",
+      "PostgreSQL",
+      "MongoDB",
+      "MSSQL",
+      "Geospatial Data"
+    ],
+    "Tools": [
+      "Docker",
+      "K8s",
+      "Git",
+      "Vite",
+      "Copilot",
+      "JIRA",
+      "Kafka",
+      "Redis"
+    ],
+    "AI": [
+      "Large Language Models (LLM)"
+    ]
   },
   "education": [
     {
