@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence, motion, useScroll, useSpring } from 'motion/react';
+import { Analytics } from '@vercel/analytics/react';
 import Splash from './components/Splash';
 import AnimatedBackground from './components/AnimatedBackground';
 import Navbar from './components/Navbar';
@@ -236,6 +237,7 @@ export default function App() {
           </motion.main>
         )}
       </AnimatePresence>
+      <Analytics />
     </div>
   );
 }
