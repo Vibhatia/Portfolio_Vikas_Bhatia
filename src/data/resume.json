@@ -93,6 +93,27 @@
   ],
   "projects": [
     {
+      "title": "AI-Powered Debugging Assistant",
+      "stack": [
+        "RAG",
+        "Pinecone",
+        "Vector Embeddings",
+        "LLM",
+        "MCP"
+      ],
+      "bullets": [
+        "Built a RAG-based debugging assistant that converts historical issue-resolution data into vector embeddings and stores them in Pinecone with metadata for efficient context retrieval.",
+        "Implemented cosine-similarity based semantic search and context-aware prompt engineering to retrieve relevant past issues and provide probable root causes and previously validated resolutions.",
+        "Phase 2 in progress: Integrating GitHub via MCP to combine historical debugging knowledge with live codebase context for code-aware issue analysis and identification of likely root causes."
+      ],
+      "links": [
+        {
+          "name": "Source Code",
+          "url": "https://github.com/Vibhatia/rag-poc"
+        }
+      ]
+    },
+    {
       "title": "LegalBridge",
       "stack": [
         "Android",
@@ -182,6 +203,7 @@
       "PostgreSQL",
       "MongoDB",
       "MSSQL",
+      "Pinecone",
       "Geospatial Data"
     ],
     "Tools": [
@@ -195,7 +217,10 @@
       "Redis"
     ],
     "AI": [
-      "Large Language Models (LLM)"
+      "Large Language Models (LLM)",
+      "RAG",
+      "Vector Embeddings",
+      "MCP"
     ]
   },
   "education": [
