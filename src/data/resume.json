@@ -37,14 +37,16 @@
       ],
       "stack": [
         "React.js",
+        "Spring Boot",
         "Node.js/Express.js",
-        "SpringBoot",
-        "MSSQL",
         "Kafka",
+        "Redis",
         "AWS (Lambda, DynamoDB, S3)",
-        "Docker"
+        "Docker",
+        "JUnit/Jest"
       ],
       "metrics": [
+        "100K+ rule executions/day",
         "30% efficiency boost",
         "4x faster builds",
         "15% smaller bundles"
