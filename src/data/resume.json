@@ -28,12 +28,12 @@
       "dates": "July 2024 - Present",
       "location": "Noida",
       "bullets": [
-        "Architected a multi-level conditional rule engine end-to-end, integrating React UI workflows with Spring Boot backend APIs and enhancing rule execution efficiency by 30%.",
-        "Built and deployed Java-based AWS Lambda functions integrated with DynamoDB and S3 for backend rule processing and asset storage, reducing manual processing overhead.",
-        "Designed and implemented microservice-based APIs for global and local rule provisioning using Spring Boot, Spring Data JPA, and MSSQL, containerized with Docker for consistent deployment.",
-        "Developed an Error Boundary in RuleBuilder, enabling automated frontend error capture and backend logging via Node.js/Express, improving system monitoring and accelerating debugging.",
-        "Increased unit and integration test coverage across critical rule-engine modules using Jest, reducing regression defects during production releases.",
-        "Led RuleBuilder migration from CRA to Vite (React 19), delivering 4× faster builds, 15% smaller bundles, and an updated CI/CD pipeline."
+        "Architected a multi-level conditional rule engine across 7 microservices with Spring Boot services and reusable React components, supporting 100K+ rule executions/day and improving execution efficiency by 30% through Redis caching.",
+        "Designed and implemented microservice-based APIs for global and local rule provisioning using Spring Boot, Spring Data JPA, and MSSQL, adding Kafka-based asynchronous logging and Dockerized deployment for improved observability and consistency.",
+        "Built and deployed Java-based AWS Lambda functions integrated with DynamoDB and S3 to automate backend rule processing and asset-storage workflows.",
+        "Led RuleBuilder’s React application migration from CRA to Vite (React 19), delivering 4× faster builds and 15% smaller bundles.",
+        "Increased unit and integration test coverage across critical rule-engine modules to 71% using JUnit, Jest, and JaCoCo, reducing regression risk and improving release stability.",
+        "Developed an Error Boundary in RuleBuilder, enabling automated frontend error capture and backend logging, improving system monitoring and accelerating debugging."
       ],
       "stack": [
         "React.js",
@@ -238,7 +238,7 @@
     }
   ],
   "awards": [
-    "Received the Rising Star Award at Newgen Software for exceptional performance and key contributions during the LIC Release.",
+    "Recognized with Newgen's Rising Star Award (2024–2025) for demonstrating strong ownership and timely delivery of key deliverables.",
     "Finalist in the 36-hour Smart India Hackathon 2023 (Kolkata) and qualified for the final round of Anveshna 2023.",
     "Student Coordinator at CSI (Computer Society of India); organized and led a React workshop on front-end development, mentoring over 100 junior participants.",
     "Secured Rank 109th/ 10K+ in CodeChef June Long Challenge and advanced to the 3rd round of CodeChef SnackDown."
